@@ -1,0 +1,26 @@
+{
+  "name": "social-proof-section-master",
+  "version": "1.0.0",
+  "description": "challenge from frontend mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "node-sass scss/main.scss css/style.css -w",
+    "dev-server": "live-server --port=3000",
+    "start": "npm-run-all --parallel watch:scss dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrKayY/Social-Proof-Section.git"
+  },
+  "author": "DrKayY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrKayY/Social-Proof-Section/issues"
+  },
+  "homepage": "https://github.com/DrKayY/Social-Proof-Section#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
+  }
+}

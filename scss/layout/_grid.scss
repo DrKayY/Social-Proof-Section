@@ -1,0 +1,76 @@
+.row,
+.row-steps {
+    width: 100%;
+    margin-bottom: $gutter-vertical;
+
+    @include clearfix;
+
+    [class^='col-'] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+    
+    .col-1-3 {
+        width: calc((100% - #{$gutter-horizontal} * 2) / 3);
+    }
+}
+
+.row-steps {
+    [class$='--1'] {
+        margin-top: 0;
+    }
+    
+    [class$='--2'] {
+        margin-top: $step-margin;
+    }
+    
+    [class$='--3'] {
+        margin-top: calc(#{$step-margin} * 2);
+    }
+}
+
+.col {
+    padding: 1rem;
+
+    [class^='row-'] {
+        &:not(:last-child) {
+            margin-bottom: $step-margin;
+        }
+    }
+    
+    [class$='-2'] {
+        width: calc(100% - #{$gutter-horizontal});
+    }
+
+    [class$='-3'] {
+        width: calc(100% - (#{$gutter-horizontal}) * 2);
+    }
+    
+    .row-1-2 {
+        margin-right: $gutter-horizontal;
+    }
+
+    .row-2-2 {
+        margin-left: $gutter-horizontal;
+    }
+
+    .row-1-3 {
+        margin-right: calc(#{$gutter-horizontal} * 2);
+    }
+
+    .row-2-3 {
+        margin-right: $gutter-horizontal;
+        margin-left: $gutter-horizontal;
+    }
+
+    .row-3-3 {
+        margin-left: calc(#{$gutter-horizontal} * 2);
+    }
+}

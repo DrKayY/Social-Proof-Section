@@ -1,0 +1,25 @@
+.bar {
+    padding: 1.5rem 3rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: $light-grayish-magenta;
+
+    &__stars {
+        display: inline-block;
+        margin-right: 3.5rem;
+    }
+
+    &__star {
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        font-size: $default-font-size;
+        font-weight: 700;
+        vertical-align: top;
+        color: $color-primary;
+    }
+}
