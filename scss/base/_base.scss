@@ -9,12 +9,37 @@
 html {
     // This defines what 1rem is
     font-size: 62.5%; // 1rem = 10px, 10/16 = 62.5%
+
+    @include respond (laptop) {
+        font-size: 56.25%; // 1rem = 9px
+    }
+    @include respond (tab-land) {
+        font-size: 50%; // 1rem = 8px
+    }
+    @include respond (tab-port) {
+        font-size: 37.5%; // 1rem = 6px
+    }
+    @include respond (large-sc) {
+        font-size: 75%; // 1rem = 12px
+    }
 }
 
 body {
+    box-sizing: border-box;
+    padding: 5rem;
+
     background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
     background-position: top left, bottom right;
     background-repeat: no-repeat;
-    padding: 5rem;
-    box-sizing: border-box;
+    background-size: 35%, 95%;
+    
+    @include respond (tab-port) {
+        padding: 3rem;
+        background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
+        background-size: 50%, 70%;
+    }
+    
+    @include respond (phone) {
+        background-size: 90%;
+    }
 }

@@ -4,6 +4,20 @@
     background-color: $color-primary;
     border-radius: 1rem;
     font-size: 1.5rem;
+    
+    @include respond (tab-land) {
+        padding: 3rem;
+    }
+    
+    @include respond (tab-port) {
+        height: 20rem;
+    }
+
+    @include respond (phone) {
+        padding: 2.5rem;;
+        font-size: 1.3rem;
+        border-radius: .7rem;
+    }
 
     &__img-shape {
         width: 6rem;
@@ -11,6 +25,16 @@
         clip-path: circle(50% at 50% 50%);
         float: left;
         margin-right: 2rem;
+        
+        @include respond (tab-land) {
+            width: 5rem;
+            height: 5rem;
+            margin-right: 1rem;
+        }
+        
+        @include respond (tab-port) {
+            margin-right: 3rem;
+        }
     }
 
     &__img {
@@ -19,19 +43,31 @@
 
     &__name {
         color: $white;
-        margin-top: 1rem;
+        margin-top: .5rem;
         font-weight: 400;
     }
     
     &__title {
         color: $soft-pink;
-        margin-top: 1rem;
+        margin-top: .5rem;
         font-weight: 400;
+
+        @include respond (tab-port) {
+            text-align: right;
+        }
+        
+        @include respond (phone) {
+            text-align: left;
+        }
     }
     
     &__text {
         clear: both;
         margin-top: 4rem;
         color: $light-grayish-magenta;
+
+        @include respond (tab-land) {
+            margin-top: 2.5rem;
+        }
     }
 }

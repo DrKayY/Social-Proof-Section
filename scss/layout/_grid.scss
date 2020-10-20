@@ -3,10 +3,19 @@
     width: 100%;
     margin-bottom: $gutter-vertical;
 
+    @include respond (tab-port) {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    
     @include clearfix;
 
     [class^='col-'] {
         float: left;
+
+        @include respond (tab-port) {
+            width: 100% !important;
+        }
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
@@ -34,14 +43,28 @@
     [class$='--3'] {
         margin-top: calc(#{$step-margin} * 2);
     }
+
+    @include respond (tab-port) {
+        [class^='col-'] {
+            margin-top: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
 }
 
 .col {
-    padding: 1rem;
-
     [class^='row-'] {
         &:not(:last-child) {
             margin-bottom: $step-margin;
+        }
+
+        @include respond (phone) {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
         }
     }
     

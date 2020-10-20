@@ -3,3 +3,30 @@
     clear: both;
     display: table;
 }
+
+/* 
+phone: px <= 357
+tab-port: 357 < px <= 768
+tab-land: 768 < px <= 1024
+laptop: 1024 < px <= 1240
+default: 1024 < px <= 1440
+large-sc: 1600 < px
+*/
+
+@mixin respond ($device-width) {
+    @if $device-width == phone {
+        @media only screen and (max-width: 22.3125em) { @content }
+    };
+    @if $device-width == tab-port {
+        @media only screen and (max-width: 48em) { @content }
+    };
+    @if $device-width == tab-land {
+        @media only screen and (max-width: 64em) { @content }
+    };
+    @if $device-width == laptop {
+        @media only screen and (max-width: 77.5em) { @content }
+    };
+    @if $device-width == large-sc {
+        @media only screen and (min-width: 100em) { @content }
+    };
+}
