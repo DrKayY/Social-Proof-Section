@@ -3,10 +3,11 @@
     height: 25rem;
     background-color: $color-primary;
     border-radius: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     
     @include respond (tab-land) {
         padding: 3rem;
+        font-size: 1.3rem;
     }
     
     @include respond (tab-port) {
@@ -15,7 +16,6 @@
 
     @include respond (phone) {
         padding: 2.5rem;;
-        font-size: 1.3rem;
         border-radius: .7rem;
     }
 

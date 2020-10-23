@@ -1,11 +1,13 @@
 .bar {
     padding: 2rem 3rem;
-    // height: 5.5rem;
     border-radius: 1rem;
     background-color: $light-grayish-magenta;
     
-    @include respond (tab-land) {
+    @include respond (laptop) {
         padding: 1rem 2rem;
+        // max width of 350px for good bar view
+        // max-width: 21.875em;
+        // max-width: 350px;
     }
 
     &__stars {
@@ -39,8 +41,8 @@
     
     &__text {
         display: inline-block;
-        font-size: $default-font-size;
         font-weight: 700;
+        font-size: 1.35rem;
         vertical-align: top;
         color: $color-primary;
         

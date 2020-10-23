@@ -43,3 +43,9 @@ body {
         background-size: 90%;
     }
 }
+
+main {
+    // Setting max width to prevent funny stretches on large screens
+    max-width: 112.5em;
+    margin: 0 auto;
+}

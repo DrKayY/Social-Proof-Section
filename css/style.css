@@ -3,7 +3,7 @@ phone: px <= 357
 tab-port: 357 < px <= 768
 tab-land: 768 < px <= 1024
 laptop: 1024 < px <= 1240
-default: 1024 < px <= 1440
+default: 1240 < px <= 1440
 large-sc: 1600 < px
 */
 *,
@@ -44,17 +44,22 @@ body {
     body {
       background-size: 90%; } }
 
+main {
+  max-width: 112.5em;
+  margin: 0 auto; }
+
 body {
   font-family: 'Spartan';
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 1.5rem; }
 
 .header-primary {
   color: #502050;
   font-weight: 700;
-  font-size: 5rem; }
-  @media only screen and (max-width: 64em) {
+  font-size: 4rem; }
+  @media only screen and (max-width: 48em) {
     .header-primary {
-      font-size: 4rem; } }
+      font-size: 3rem; } }
   @media only screen and (max-width: 48em) {
     .header-primary {
       text-align: center;
@@ -70,7 +75,7 @@ body {
   padding: 2rem 3rem;
   border-radius: 1rem;
   background-color: #f7f2f7; }
-  @media only screen and (max-width: 64em) {
+  @media only screen and (max-width: 77.5em) {
     .bar {
       padding: 1rem 2rem; } }
   .bar__stars {
@@ -94,8 +99,8 @@ body {
       height: 1.5rem; } }
   .bar__text {
     display: inline-block;
-    font-size: 1.5rem;
     font-weight: 700;
+    font-size: 1.35rem;
     vertical-align: top;
     color: #502050; }
     @media only screen and (max-width: 77.5em) {
@@ -111,17 +116,17 @@ body {
   height: 25rem;
   background-color: #502050;
   border-radius: 1rem;
-  font-size: 1.5rem; }
+  font-size: 1.4rem; }
   @media only screen and (max-width: 64em) {
     .card {
-      padding: 3rem; } }
+      padding: 3rem;
+      font-size: 1.3rem; } }
   @media only screen and (max-width: 48em) {
     .card {
       height: 20rem; } }
   @media only screen and (max-width: 22.3125em) {
     .card {
       padding: 2.5rem;
-      font-size: 1.3rem;
       border-radius: .7rem; } }
   .card__img-shape {
     width: 6rem;

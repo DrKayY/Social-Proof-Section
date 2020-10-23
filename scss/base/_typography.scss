@@ -1,15 +1,16 @@
 body {
     font-family: 'Spartan';
     font-weight: 400;
+    font-size: $default-font-size;
 }
 
 .header-primary {
     color: $color-primary;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4rem;
     
-    @include respond (tab-land) {
-        font-size: 4rem;
+    @include respond (tab-port) {
+        font-size: 3rem;
     }
 
     @include respond (tab-port) {
