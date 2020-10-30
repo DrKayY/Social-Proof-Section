@@ -2,6 +2,10 @@
 
 ![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
 
+## Submission
+
+Final solution @ [Vercel host](https://social-proof-section-iota-olive.vercel.app/).
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
